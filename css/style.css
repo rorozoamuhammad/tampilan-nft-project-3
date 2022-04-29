@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+    width: 23%;
+    margin: auto;
+    margin-top: 15px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.head img {
+    width: 304px;
+    height: 304px;
+    border-radius: 10px;
+}
+
+.head:hover .kotak {
+    opacity: .4;
+    cursor: pointer;
+}
+
+.head:hover .icon {
+    display: block;
+}
+
+.kotak {
+    background-color: hsl(178, 100%, 50%);
+    width: 304px;
+    height: 304px;
+    margin: auto;
+    position: absolute;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.icon {
+    position: absolute;
+    right: 45%;
+    top: 125px;
+    display: none;
+    transition: .5s;
+}
+
+.icon img {
+    width: 48px;
+    height: 48px;
+}
+
+.nama {
+    font-size: 1.4em;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.nama:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.paragraf {
+    font-size: 18px;
+    color:  hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+.poin {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+}
+
+.poin .hari {
+    color:  hsl(215, 51%, 70%);
+}
+
+.poin .nilai {
+    color: hsl(178, 100%, 50%);
+}
+
+svg {
+    position: absolute;
+    right: 90px;
+    bottom: 20px;
+}
+
+hr {
+    border: none;
+    border: 1px solid hsl(215, 32%, 27%);
+}
+
+.data {
+    display: flex;
+}
+
+.data img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 25px;
+}
+
+.data .creator {
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    padding-left: 10px;
+    font-weight: 300;
+}
+
+.data a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    transition: .5s ease-in-out;
+}
+
+.data a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 63%;
+        margin-top: 20px;
+    }
+    .head img {
+        width: 313px;
+        height: 313px;
+    }
+    .kotak {
+        width: 313px;
+        height: 313px;
+    }
+    .icon img {
+        width: 48px;
+        height: 48px;
+    }
+}
